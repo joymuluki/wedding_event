@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: /*linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),*/url(background\ \(5\).jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+} 
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 8px 12px;
+    position:relative;
+
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    background: #f44336;
+    content: '';
+    width: 0%;
+    height:2px;
+    display: block;
+    margin: auto;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.Contact-form h3{
+    font-size: 80px;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+
+ }
+ .Contact-form span{
+     color: rgb(255, 192, 248);
+     font-size: 80PX;
+ }
+ .Contact-form p{
+     color: black;
+     letter-spacing: 0px;
+     line-height: 26px;
+     font-size: 1.1rem;
+     margin-bottom: 2%;
+     text-align: center;
+ }
+ .Contact-form form{
+     position: relative;
+     width: 100%;
+     margin-bottom: 20px;
+      display: flex;
+       flex-direction: column; 
+        align-items: center;
+        padding: 0%;
+
+ }
+ .Contact-form form input{
+       align-items: center;
+     width: 100%;
+     background-color: white;
+     font-size: 15px;
+     margin-bottom: 20px;
+     color: black;
+     line-height: 20px;
+    padding: 20px 20px; 
+}
+ .Contact-form label{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+ }
+ input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    color: aliceblue;
+ }
+
+textarea {
+    resize: vertical;
+    color: black;
+    padding: 2px;
+}
+
+button {
+    background-color: palevioletred;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: medium;
+    align-items: center;
+}
+
+button:hover {
+    background-color:pink;
+}
+.Wedding h3{
+    color: black;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+.Wedding h3 span{
+    color: pink;
+}
+.Wedding H2{
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+.Wedding p{
+    color: black;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.rsvp h2{
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-bottom: 5%;
+}
+.rsvp h2 span{
+    color: pink;
+}
+.rsvp form{
+    width: 100%;
+    margin-bottom: 20px;
+     padding: 0px;
+    color: black;
+    text-align: center;
+}
+.rsvp form input{
+    color: black;
+    font-size:15px;
+    line-height: 20px;
+    padding: 20px 20px; 
+}
+label{
+    color: black;
+    text-align: center;
+}
+footer{
+
+   text-align: center;
+   margin-top: auto;
+  padding: 0px;
+  background-color: thistle;
+  
+}
+header img{
+    max-width: 80px;
+    height: auto;
+    margin-left: 50%;
+}
+#countdown{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+    color: black;
+
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+}
+
+/* Media query for screens smaller than 767px (adjust as needed) */
+@media only screen and (max-width: 767px) {
+    .Wedding h3 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    .Wedding h2 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+        margin-top: 30px; /* Adjust margin for smaller screens */
+    }
+
+    .Wedding p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+}
+  @media screen and (max-width: 768px) {
+    nav ul li {
+      display: inline-block;
+      list-style-type: lower-latin;
+      margin: 20px 20px;
+      text-align: center;
+      margin-left: auto;
+      margin-top: 0%;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    nav {
+        justify-content: center; /* Center align the items on smaller screens */
+        padding: 20px 5%; /* Adjust padding for smaller screens */
+    }
+
+    nav ul li {
+        text-align: center; /* Center align list items on smaller screens */
+        margin: 10px 10px; /* Adjust margin for list items on smaller screens */
+    }
+}
+@media only screen and (max-width: 767px) {
+    header img {
+        max-width: 20%; /* Adjust the maximum width for smaller screens */
+        margin-left: auto; /* Align the image to the left on smaller screens */
+        margin-right: auto; /* Align the image to the right on smaller screens */
+        display: block; /* Ensure the image is a block element for proper centering */
+    }
+}
+ 
